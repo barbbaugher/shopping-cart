@@ -7,6 +7,7 @@ public class ShopApp {
 		Scanner input = new Scanner(System.in);
 
 		Item itemsInCart = new Item();
+		Cart itemsInTheCart = new Cart();
 
 		ArrayList<String> itemNames = new ArrayList<String>();
 		ArrayList<Double> itemPrices = new ArrayList<Double>();
@@ -41,9 +42,9 @@ public class ShopApp {
 			
 			System.out.println("Continue shopping (y/n)? ");
 			continueShopping = input.next();
-
+			
 		} while (continueShopping.equalsIgnoreCase("y"));
-
+		
 		input.close();
 	}
 
